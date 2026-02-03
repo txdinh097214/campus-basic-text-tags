@@ -57,3 +57,19 @@ section > section{
 mark{
     background-color: var(--bright-green);
 }
+
+/* Center the poem section like the expected output */
+section:nth-of-type(2) {
+  text-align: center;
+}
+
+/* Make <pre> look like normal text (not monospace) and keep spacing */
+.poem {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  white-space: pre;
+  display: inline-block; /* allows centering within text-align:center */
+  text-align: left;      /* keeps poem lines aligned consistently */
+  margin: 0;
+}
